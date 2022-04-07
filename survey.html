@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アンケートページ</title>
+    <link rel="stylesheet" href="./style/survey.css">
+</head>
+<body>
+    <header>
+        <p>アンケート</p>
+    </header>
+
+    <main class="main">
+        <form class="form_box" action="">
+            <div class="box box1">
+                <p>AxiZの研修をご利用いただき、まことにありがとうございます<br>
+                以下の内容の記入及び送信していただけると幸いです</p>
+            </div>
+            <div class="box box2">
+                <div class="tyuui">
+                    <label for="company_name">会社名 </label><br>
+                    <p class="hissu">必須</p>
+                </div>
+                <input class="form1" type="text" id="company_name" name="name" placeholder="例)株式会社テクノコア" required> 
+            </div>
+            <div class="box box3">
+                <div class="tyuui">
+                    <label for="name">お名前</label><br>
+                    <p class="hissu">必須</p>
+                </div>
+                <input class="form1" type="text" id="name" name="name" placeholder="例)手久野 興亜" required> 
+            </div>
+            <div class="box box4">
+                <label for="mail">メールアドレス</label><br>
+                <input class="form1" type="text" id="mail" name="name" placeholder="例)example@axiz.co.jp"> 
+            </div>
+            <div class="box box5">
+                <label for="age">年齢</label><br>
+                <input class="form2" type="number" id="age" name="age" value="23"> 
+            </div>
+            <div class="box box6">
+                <label for="course1 course2">受講コース</label><br>
+                <input type="radio" name="course" id="course1" value="Java" checked>Java
+                <input type="radio" name="course" id="course2" value="インフラ">インフラ
+            </div>
+            <div class="box box7">
+                <label for="place">会場</label><br>
+                <select class="form1" name="会場">
+                    <option value="nihonbashiA" selected >日本橋A教室</option>
+                    <option value="okinawa">沖縄教室</option>
+                    <option value="hokkaido">北海道教室</option>
+                </select>
+            </div>
+            <div class="box box8">
+                <label for="curriculum">詳しく学びたい内容（複数回答可）</label><br>
+                <div class="flex1">
+                    <p><input type="checkbox" name="test1" value="business manners">ビジネスマナー</p>
+                    <p><input type="checkbox" name="test2" value="HTML/CSS">HTML/CSS</p>
+                    <p><input type="checkbox" name="test3" value="JavaScript">JavaScript</p>
+                    <p><input type="checkbox" name="test4" value="Java">Java</p>
+                    <p><input type="checkbox" name="test5" value="データベース">データベース</p>
+                    <p><input type="checkbox" name="test6" value="Linux">Linux</p>
+                </div>
+            </div>
+            <div class="box box9">
+                <label for="opinion">ご意見</label><br>
+                <textarea class="opinion" name="free" rows="2" cols="20">自由にご記入ください。</textarea>
+            </div>
+            <button class="button"  type="submit">送信する</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Copyright（C）AxiZ</p>
+    </footer>
+</body>
+</html>
